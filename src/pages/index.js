@@ -12,6 +12,7 @@ const IndexPage = () => (
     <h1>Rowan-James Tran</h1>
     <Project projectTitle="There is No Gun" />
     <Project projectTitle="Dead Word Checker" />
+    <Project projectTitle="Ball Game" />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
