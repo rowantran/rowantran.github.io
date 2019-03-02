@@ -21,3 +21,11 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+    query {
+        imageRowan: file(relativePath: { eq: "rowan.jpeg" }) {
+            childImageSharp {
+                fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+
