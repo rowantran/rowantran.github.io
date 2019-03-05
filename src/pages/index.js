@@ -9,16 +9,17 @@ import SEO from "../components/seo"
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Rowan-James Tran</h1>
-    <div style={{ maxWidth: `500px` }}>
-        <Project projectTitle="There is No Gun" />
-        <Img fluid={props.data.imageThereIsNoGun.childImageSharp.fluid} />
+    <div style={{ display: `flex` }}>
+        <div style={{ maxWidth: `500px` }}>
+            <Project projectTitle="There is No Gun" />
+            <Img fluid={props.data.imageThereIsNoGun.childImageSharp.fluid} />
+        </div>
+        <div style={{ maxWidth: `500px` }}>
+            <Project projectTitle="Dead Word Checker" />
+            <Img fluid={props.data.imageDeadWordChecker.childImageSharp.fluid} />
+        </div>
+        <Project projectTitle="Ball Game" />
     </div>
-    <div style={{ maxWidth: `500px` }}>
-        <Project projectTitle="Dead Word Checker" />
-        <Img fluid={props.data.imageDeadWordChecker.childImageSharp.fluid} />
-    </div>
-    <Project projectTitle="Ball Game" />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Img fluid={props.data.imageRowan.childImageSharp.fluid} />
     </div>
