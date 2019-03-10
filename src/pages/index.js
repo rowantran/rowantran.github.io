@@ -10,6 +10,7 @@ import thereIsNoGun from '../images/there-is-no-gun.png'
 import deadWordChecker from '../images/dead-word-checker.png'
 import ballGame from '../images/ball-game.png'
 import rowan from '../images/rowan.jpeg'
+import taskHelper from '../images/task-helper.png'
 
 const IndexPage = (props) => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = (props) => (
     }}>
         <Project projectTitle="There is No Gun" imageSrc={thereIsNoGun} imageAlt="There is No Gun" />
         <Project projectTitle="Dead Word Checker" imageSrc={deadWordChecker} imageAlt="Dead Word Checker" />
+        <Project projectTitle="Task Helper" imageSrc={taskHelper} imageAlt="Task Helper" />
         <Project projectTitle="Ball Game" imageSrc={ballGame} imageAlt="Ball Game" />
     </div>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
