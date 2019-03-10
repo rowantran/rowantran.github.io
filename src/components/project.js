@@ -1,16 +1,13 @@
 import PropTypes from "prop-types"
+import Img from "gatsby-image"
 import React from "react"
+import "./project.css"
 
-const Project = ({ projectTitle }) => (
-    <h2>{projectTitle}</h2>
+const Project = (props) => (
+    <div class="project">
+        <h2 class="project">{props.projectTitle}</h2>
+        <Img fluid={props.image} />
+    </div>
 )
-
-Project.propTypes = {
-    projectTitle: PropTypes.string,
-}
-
-Project.defaultProps = {
-    projectTitle: `aaa`,
-}
 
 export default Project

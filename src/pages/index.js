@@ -10,14 +10,8 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div style={{ display: `flex` }}>
-        <div style={{ maxWidth: `500px` }}>
-            <Project projectTitle="There is No Gun" />
-            <Img fluid={props.data.imageThereIsNoGun.childImageSharp.fluid} />
-        </div>
-        <div style={{ maxWidth: `500px` }}>
-            <Project projectTitle="Dead Word Checker" />
-            <Img fluid={props.data.imageDeadWordChecker.childImageSharp.fluid} />
-        </div>
+        <Project projectTitle="There is No Gun" image={props.data.imageThereIsNoGun.childImageSharp.fluid} />
+        <Project projectTitle="Dead Word Checker" image={props.data.imageDeadWordChecker.childImageSharp.fluid} />
         <Project projectTitle="Ball Game" />
     </div>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
