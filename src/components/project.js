@@ -4,9 +4,9 @@ import React from "react"
 import "./project.css"
 
 const Project = (props) => (
-    <div class="project">
-        <h2 class="project">{props.projectTitle}</h2>
-        <Img fluid={props.image} />
+    <div className="project">
+        <h2>{props.projectTitle}</h2>
+        <img src={props.imageSrc} alt={props.imageAlt} />
     </div>
 )
 
