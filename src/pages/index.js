@@ -24,7 +24,7 @@ export default ({data}) => {
 
             }}>
                 {data.allProjectsJson.edges.map(({node}) => (
-                    <Project projectTitle={node.title} imageSrc={thereIsNoGun} imageAlt={node.description} />
+                    <Project projectTitle={node.title} imageSrc={node.image.childImageSharp.fluid} imageAlt={node.description} />
                 ))}
             </div>
             <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -41,6 +41,13 @@ query ProjectsQuery {
         edges {
             node {
                 title
+                image {
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
                 description
             }
         }

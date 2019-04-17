@@ -6,7 +6,7 @@ import "./project.css"
 const Project = (props) => (
     <div className="project">
         <h2>{props.projectTitle}</h2>
-        <img src={props.imageSrc} alt={props.imageAlt} />
+        <Img fluid={props.imageSrc} />
     </div>
 )
 
