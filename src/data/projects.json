@@ -1,18 +1,22 @@
 [
     {
         "title": "There is No Gun",
+        "image": "../images/there-is-no-gun.png",
         "description": "Bullet hell game created in Java using LibGDX library."
     },
     {
         "title": "Dead Word Checker",
+        "image": "../images/dead-word-checker.png",
         "description": "A Java application to minimize the use of weak words in your writing."
     },
     {
         "title": "Task Helper",
+        "image": "../images/task-helper.png",
         "description": "Android app to keep a simple checklist of tasks to get done."
     },
     {
         "title": "Ball Game",
+        "image": "../images/ball-game.png",
         "description": "Java clone of the Impossible Game using Swing."
     }
 ]
