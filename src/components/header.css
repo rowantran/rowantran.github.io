@@ -5,9 +5,18 @@ header {
     margin-bottom: 1.45rem;
 }
 
-.title {
+.header-main {
     margin-left: 15px;
     max-width: 960px;
     padding: 1.45rem 1.0875rem;
     text-align: left;
+}
+
+.header-text {
+    margin: 0;
+}
+
+.header-text a {
+    color: black;
+    text-decoration: none;
 }
