@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <footer>
+        <footer style={{textAlign: `center`}}>
             © {new Date().getFullYear()} Rowan-James Tran
         </footer>
       </>
