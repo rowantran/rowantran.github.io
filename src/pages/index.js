@@ -12,25 +12,29 @@ import ballGame from '../images/ball-game.png'
 import rowan from '../images/rowan.jpeg'
 import taskHelper from '../images/task-helper.png'
 
+import '../css/index.css'
+
 export default ({data}) => {
     console.log(data);
     return (
         <Layout>
             <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-            <div style={{
-                width: '90%', 
-                display: `flex`,
-                flexWrap: `nowrap`,
+            <div className="container">
+                <div className="about-me">
+                    <div className="about-me-picture">Rowan-James.</div>
+                    <div className="about-me-header">Hi, my name is Rowan-James.</div>
+                </div>
+                <div style={{
+                    width: '90%', 
+                    display: `flex`,
+                    flexWrap: `nowrap`,
 
-            }}>
-                {data.allProjectsJson.edges.map(({node}) => (
-                    <Project projectTitle={node.title} imageSrc={node.image.childImageSharp.fluid} imageAlt={node.description} />
-                ))}
+                }}>
+                    {data.allProjectsJson.edges.map(({node}) => (
+                        <Project projectTitle={node.title} imageSrc={node.image.childImageSharp.fluid} imageAlt={node.description} />
+                    ))}
+                </div>
             </div>
-            <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                {/*<Img fluid={props.data.imageRowan.childImageSharp.fluid} />*/}
-            </div>
-            <Link to="/page-2/">Go to page 2</Link>
       </Layout>
     )
 }
