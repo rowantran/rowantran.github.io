@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+header {
+    border-bottom: 1px solid black;
+    margin-bottom: 1.45rem;
+}
+
+.title {
+    margin-left: 15px;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+    text-align: left;
+}
