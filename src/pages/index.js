@@ -21,7 +21,9 @@ export default ({data}) => {
             <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
             <div className="container">
                 <div className="about-me">
-                    <div className="about-me-picture">Rowan-James.</div>
+                    <div className="about-me-picture">
+                        <Img fluid={data.profileImage.childImageSharp.fluid} />
+                    </div>
                     <div className="about-me-main">
                         <div className="about-me-header">Hi, my name is Rowan-James.</div>
                         <div className="about-me-text">
@@ -58,6 +60,14 @@ query ProjectsQuery {
                     }
                 }
                 description
+            }
+        }
+    }
+
+    profileImage: file(relativePath: {eq: "profile.jpg"}) {
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid
             }
         }
     }
