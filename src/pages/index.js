@@ -27,7 +27,12 @@ export default ({data}) => {
                     <div className="about-me-main">
                         <div className="about-me-header">Hi, my name is Rowan-James.</div>
                         <div className="about-me-text">
-                            I'm a developer.
+                            <p>
+                                I&apos;m a passionate and always-improving developer specializing in desktop programming and web development.
+                            </p>
+                            <p>
+                                I&apos;ll help you to create projects built from the ground up to perfectly match every requirement.
+                            </p>
                         </div>
                     </div>
                 </div>
