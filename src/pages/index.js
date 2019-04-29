@@ -21,9 +21,6 @@ export default ({data}) => {
             <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
             <div className="container">
                 <div className="about-me">
-                    <div className="about-me-picture">
-                        <Img fluid={data.profileImage.childImageSharp.fluid} />
-                    </div>
                     <div className="about-me-main">
                         <div className="about-me-header">Hi, my name is Rowan-James.</div>
                         <div className="about-me-text">
@@ -36,12 +33,7 @@ export default ({data}) => {
                         </div>
                     </div>
                 </div>
-                <div style={{
-                    width: '90%', 
-                    display: `flex`,
-                    flexWrap: `nowrap`,
-
-                }}>
+                <div className="projects">
                     {data.allProjectsJson.edges.map(({node}) => (
                         <Project projectTitle={node.title} imageSrc={node.image.childImageSharp.fluid} imageAlt={node.description} />
                     ))}
