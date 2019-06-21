@@ -6,14 +6,16 @@ header {
 }
 
 .header-main {
+    display: flex;
     margin-left: 15px;
     max-width: 960px;
     padding: 1.45rem 1.0875rem;
-    text-align: left;
+    justify-content: left;
 }
 
 .header-text {
     margin: 0;
+    text-align: center;
 }
 
 .header-text a {
