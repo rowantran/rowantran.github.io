@@ -1,5 +1,15 @@
 [
     {
+        "title": "Book Guide",
+        "image": "../images/book-guide.png",
+        "description": "A site built with React and Node to crowdsource price estimates for collectors' novels."
+    },
+    {
+        "title": "Tenant Info New York",
+        "image": "../images/tenant-info.png",
+        "description": "Website to provide access to a real estate database."
+    },
+    {
         "title": "There is No Gun",
         "image": "../images/there-is-no-gun.png",
         "description": "Bullet hell game created in Java using LibGDX library."
