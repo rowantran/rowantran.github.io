@@ -57,13 +57,5 @@ query ProjectsQuery {
             }
         }
     }
-
-    profileImage: file(relativePath: {eq: "profile.jpg"}) {
-        childImageSharp {
-            fluid {
-                ...GatsbyImageSharpFluid
-            }
-        }
-    }
 }
 `

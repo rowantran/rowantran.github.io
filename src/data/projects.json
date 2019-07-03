@@ -4,8 +4,7 @@
         "image": "../images/book-guide.png",
         "description": "A site built with React and Node to crowdsource price estimates for collectors' novels."
     },
-    {
-        "title": "Tenant Info New York",
+    { "title": "Tenant Info New York",
         "image": "../images/tenant-info.png",
         "description": "Website to provide access to a real estate database."
     },
@@ -18,11 +17,6 @@
         "title": "Dead Word Checker",
         "image": "../images/dead-word-checker.png",
         "description": "A Java application to minimize the use of weak words in your writing."
-    },
-    {
-        "title": "Task Helper",
-        "image": "../images/task-helper.png",
-        "description": "Android app to keep a simple checklist of tasks to get done."
     },
     {
         "title": "Ball Game",

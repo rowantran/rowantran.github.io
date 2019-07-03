@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
 }
 article,
 aside,
@@ -199,8 +196,9 @@ html {
   box-sizing: inherit;
 }
 body {
+  margin: 0;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Roboto Mono", georgia, serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

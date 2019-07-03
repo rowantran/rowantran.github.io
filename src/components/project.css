@@ -1,6 +1,8 @@
 .project {
     min-width: 30%;
     margin: 20px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .project:hover {
