@@ -4,7 +4,7 @@
         "description": "Website to provide access to a real estate database."
     },
     {
-        "title": "Book Guide",
+        "title": "Paperback Price Guide",
         "image": "../images/book-guide.png",
         "description": "A site built with React and Node to crowdsource price estimates for collectors' novels."
     }
