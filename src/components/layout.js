@@ -16,9 +16,8 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={() => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer style={{textAlign: `center`}}>
             © {new Date().getFullYear()} Rowan-James Tran

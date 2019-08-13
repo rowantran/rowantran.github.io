@@ -22,12 +22,8 @@ export default ({data}) => {
             <div className="container">
                 <div className="about-me">
                     <div className="about-me-main">
-                        <div className="about-me-header">Hi, my name is Rowan-James.</div>
-                        <div className="about-me-text">
-                            <p>
-                                I&apos;m a full-stack developer.
-                            </p>
-                        </div>
+                        <h1 className="about-me-header">Rowan-James Tran</h1>
+                        <div className="about-me-text">full-stack developer</div>
                     </div>
                 </div>
                 <div className="projects">
@@ -48,7 +44,7 @@ query ProjectsQuery {
                 title
                 image {
                     childImageSharp {
-                        fluid {
+                        fluid(maxWidth: 2000) {
                             ...GatsbyImageSharpFluid
                         }
                     }
