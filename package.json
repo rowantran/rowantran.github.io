@@ -29,6 +29,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -40,5 +41,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
