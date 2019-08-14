@@ -1,0 +1,25 @@
+.contact {
+    width: 100%;
+    padding: 100px;
+    border-top: 1px solid rgba(249, 249, 250, 0.25);
+
+    text-align: center; 
+    
+    color: #f9f9fa;
+}
+
+.contact__header {
+    font-family: 'Josefin Sans Semibold', 'Helvetica', sans-serif;    
+    font-size: 2.5vw;
+    text-transform: uppercase;
+}
+
+.contact__info a, .contact__info a:visited {
+    color: #f9f9fa;
+}
+
+@media (max-width: 960px) {
+    .contact__header {
+        font-size: 2.5rem;
+    }
+}

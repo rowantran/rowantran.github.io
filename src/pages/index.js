@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
+import Contact from "../components/contact"
 import Layout from "../components/layout"
 import Project from "../components/project"
 import SEO from "../components/seo"
@@ -36,9 +37,10 @@ export default ({data}) => {
                 </div>
                 <div className="projects" id="projects">
                     {data.allProjectsJson.edges.map(({node}) => (
-                        <Project projectTitle={node.title} imageSrc={node.image.childImageSharp.fluid} imageAlt={node.description} />
+                        <Project projectTitle={node.title} projectBlurb={node.blurb} imageSrc={node.image.childImageSharp.fluid} imageAlt={node.description} />
                     ))}
                 </div>
+                <Contact email="rowanjames.tran@gmail.com" />
             </div>
       </Layout>
     )
@@ -57,7 +59,7 @@ query ProjectsQuery {
                         }
                     }
                 }
-                description
+                blurb 
             }
         }
     }

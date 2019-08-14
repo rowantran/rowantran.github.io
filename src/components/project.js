@@ -5,7 +5,10 @@ import "./project.css"
 
 const Project = (props) => (
     <div className="project">
-        <h2>{props.projectTitle}</h2>
+        <div className="project__info">
+            <h2>{props.projectTitle}</h2>
+            <p>{props.projectBlurb}</p>
+        </div>
         <Img fluid={props.imageSrc} />
     </div>
 )
