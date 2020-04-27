@@ -1,0 +1,56 @@
+.aboutMe {
+  width: 80%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  color: #f9f9fa;
+}
+
+.main {
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.name {
+  font-family: 'Josefin Sans Semibold', 'Helvetica', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 5rem;
+
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+
+.scrollDown {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 3px solid #ffc15c;
+}
+
+.scrollDownIcon {
+  font-size: 30px;
+  color: #ffc15c;
+}
+
+

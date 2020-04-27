@@ -20,6 +20,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+        useResolveUrlLoader: true,
+      },
+    },
     `gatsby-transformer-json`,
     {
         resolve: `gatsby-source-filesystem`,

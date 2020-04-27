@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Josefin Sans Semibold';
+    src: url('../fonts/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #104891;
+    color: #f9f9fa;
+}
+
+.projects {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
