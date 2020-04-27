@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, graphql} from "gatsby";
+import { graphql } from "gatsby";
 
 import AboutMe from "../components/about-me";
 import Contact from "../components/contact";
@@ -30,21 +30,21 @@ function IndexPage({ data }) {
 
 export const query = graphql`
 query ProjectsQuery {
-    allProjectsJson {
-        edges {
-            node {
-                title
-                image {
-                    childImageSharp {
-                        fluid(maxWidth: 2000) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-                blurb 
+  allProjectsJson {
+    edges {
+      node {
+        title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2000) {
+              ...GatsbyImageSharpFluid
             }
+          }
         }
+        blurb 
+      }
     }
+  }
 }
 `;
 
