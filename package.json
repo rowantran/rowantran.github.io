@@ -30,7 +30,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -r https://github.com/rowantran/rowantran.github.io.git -b master",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
